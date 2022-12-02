@@ -15,15 +15,20 @@ extern "C" {
 #include <SPI.h>
 #include "nfcScanner.h"
 #include "button.h"
+#include "RGBControl.h"
+
+
 // Replace with your network credentials (STATION)
 const char* ssid = "iPhone de Enzo";
 const char* Password = "123456789";
 
-#define RGB6812_PIN 26
+
 #define STEAM_SENSOR_PIN 34
 #define BUZZER_PIN 25
 #define WINDOW_PIN 5
 #define DOOR_PIN 13
+
+
 
 void initWiFi() {
   WiFi.mode(WIFI_STA);
@@ -35,7 +40,6 @@ void initWiFi() {
   }
   Serial.println(WiFi.localIP());
 }
-
 
 
 
@@ -53,6 +57,8 @@ void setup() {
   setupPIRDetection();
   setupNFCScanner();
   setupButton();
+  setupRGB();
+  refreshRGB();
 }
 
 void loop() {
@@ -67,7 +73,8 @@ void loop() {
   pilotFan(true, 50);
   PIRDetection(); // false == aucune detection // true == detection de quelqu'un
   Serial.print("ceci est un test : " );
-
+  controlRGB("red");
+  
 }
 
 
