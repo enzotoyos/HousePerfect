@@ -12,6 +12,6 @@ void writeScreen(int cursorX, int cursorY,  char* value){
   mylcd.print(value);
 };
 
-void refershScreen(void){
+void refreshScreen(void){
   mylcd.clear();  
 };

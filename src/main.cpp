@@ -14,11 +14,16 @@ extern "C" {
 #include "PIRDetector.h"
 #include <SPI.h>
 #include "nfcScanner.h"
+#include "button.h"
 // Replace with your network credentials (STATION)
 const char* ssid = "iPhone de Enzo";
 const char* Password = "123456789";
 
-
+#define RGB6812_PIN 26
+#define STEAM_SENSOR_PIN 34
+#define BUZZER_PIN 25
+#define WINDOW_PIN 5
+#define DOOR_PIN 13
 
 void initWiFi() {
   WiFi.mode(WIFI_STA);
@@ -47,7 +52,7 @@ void setup() {
   setupFan();
   setupPIRDetection();
   setupNFCScanner();
-
+  setupButton();
 }
 
 void loop() {
@@ -61,9 +66,9 @@ void loop() {
   pilotLED(true);
   pilotFan(true, 50);
   PIRDetection(); // false == aucune detection // true == detection de quelqu'un
-  String i = readUID();
-  Serial.print("ceci est un test : " + i);
+  Serial.print("ceci est un test : " );
 
 }
+
 
 

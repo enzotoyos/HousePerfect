@@ -6,18 +6,20 @@
 //                                  //
 //////////////////////////////////////
 
-#ifndef _ECRAN_H_ 
-#define _ECRAN_H_
+#ifndef _BUTTON_H_ 
+#define _BUTTON_H_
 #endif
 
 
 
 /************DECLARATION***********/
-#include <LiquidCrystal_I2C.h>
-
+#define LEFT_BUTTON_PIN 16
+#define RIGHT_BUTTON_PIN 27
+#include <Arduino.h>
 
 
 //déclaration des fonctions 
-void setupSreen(void);
-void writeScreen(int cursorX, int cursorY, char* value);
-void refreshScreen(void);
+void setupButton(void);
+void pilotLED(bool light);
+void leftButtonPressed(void);
+void rightButtonPressed(void);
