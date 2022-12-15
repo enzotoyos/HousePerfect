@@ -2,11 +2,8 @@
 
 House perfect est un projet M2 d'YNOV. Ce projet à pour but de développer une maison miniature entierement connecté sur la base d'un ESP 32
 
-<table>
-<tr>
-  <td><img src="https://user-images.githubusercontent.com/58291299/207833504-9ff6b57c-81d0-43d8-95e3-524da0a09435.jpg" alt="drawing" width="400"/></td>
-</tr>
-</table>
+<img src="https://user-images.githubusercontent.com/58291299/207833504-9ff6b57c-81d0-43d8-95e3-524da0a09435.jpg" alt="drawing" width="400"/>
+
 
 ## 1. Spécifications Techniques
 - Communication MQTT
