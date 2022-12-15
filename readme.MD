@@ -4,7 +4,7 @@ House perfect est un projet M2 d'YNOV. Ce projet à pour but de développer une 
 
 <table>
 <tr>
-  <td><img src="https://user-images.githubusercontent.com/58291299/207833504-9ff6b57c-81d0-43d8-95e3-524da0a09435.jpg" alt="drawing" width="200"/></td>
+  <td><img src="https://user-images.githubusercontent.com/58291299/207833504-9ff6b57c-81d0-43d8-95e3-524da0a09435.jpg" alt="drawing" width="400"/></td>
 </tr>
 </table>
 
